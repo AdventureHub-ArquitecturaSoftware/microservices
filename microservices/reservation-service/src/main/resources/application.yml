@@ -1,0 +1,7 @@
+server.port: 7007
+server.error.include-message: always
+
+logging:
+level:
+root: INFO
+se.magnus: DEBUG
