@@ -10,4 +10,6 @@ import java.util.List;
 public interface PaymentRepository extends JpaRepository<PaymentEntity, Integer> {
     List<PaymentEntity> findByUserId(Integer userId);
     boolean existsByPaymentMethod(String paymentMethod);
+
+    boolean existsByPaymentDate(String paymentDate);
 }

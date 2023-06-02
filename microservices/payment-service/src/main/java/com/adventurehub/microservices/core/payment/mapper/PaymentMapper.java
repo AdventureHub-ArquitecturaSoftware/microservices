@@ -20,6 +20,6 @@ public interface PaymentMapper {
     @Mappings({
            @Mapping(target = "id", ignore = true),
     })
-    PaymentEntity apiToEntity(Payment api);
+    PaymentEntity apiToEntity(Payment apiPayment);
 }
 

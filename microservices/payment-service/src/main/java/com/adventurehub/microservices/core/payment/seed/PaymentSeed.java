@@ -13,12 +13,12 @@ public class PaymentSeed {
     private static final String[] DEFAULT_PAYMENT_TYPES = {"Credit Card", "PayPal"};
 
     private final PaymentRepository paymentRepository;
-    private final PaymentMapper paymentMapper;
+    private final PaymentMapper mapper;
 
     @Autowired
-    public PaymentSeed(PaymentRepository paymentRepository, PaymentMapper paymentMapper) {
+    public PaymentSeed(PaymentRepository paymentRepository, PaymentMapper mapper) {
         this.paymentRepository = paymentRepository;
-        this.paymentMapper = paymentMapper;
+        this.mapper = mapper;
     }
 
     public void seed() {
@@ -28,7 +28,7 @@ public class PaymentSeed {
                 newPayment.setAmount(DEFAULT_AMOUNT);
                 newPayment.setPaymentMethod(paymentMethod);
 
-                PaymentEntity paymentEntity = paymentMapper.apiToEntity(newPayment);
+                PaymentEntity paymentEntity = mapper.apiToEntity(newPayment);
                 paymentRepository.save(paymentEntity);
             }
         }
