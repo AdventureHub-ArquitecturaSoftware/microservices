@@ -8,6 +8,7 @@ import com.adventurehub.api.core.category.Category;
 
 @Mapper(componentModel = "spring")
 public interface CategoryMapper {
+
     @Mappings({
             @Mapping(target = "serviceAddress", ignore = true),
             @Mapping(target = "categoryId", ignore = true)

@@ -17,4 +17,6 @@ public interface PaymentService {
             value    = "/payment/{userId}",
             produces = "application/json")
     List<Payment> getPayments(@RequestParam(value = "userId", required = true) Integer userId);
+
+    void makePayment(Payment payment);
 }
