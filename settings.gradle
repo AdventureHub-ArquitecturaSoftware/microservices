@@ -1,11 +1,8 @@
 include ':api'
 include ':util'
 include ':microservices:user-service'
-include ':microservices:user-composite-service'
 include ':microservices:chat-service'
 include ':microservices:payment-service'
 include ':microservices:travel-package-service'
 include ':microservices:travel-package-composite-service'
-include 'microservices:user-composite-service'
-findProject(':microservices:user-composite-service')?.name = 'user-composite-service'
 
