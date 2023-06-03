@@ -1,9 +1,10 @@
-package com.adventurehub.microservices.core.payment;
+package com.example.travelagencyservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+
 @SpringBootTest
-class PaymentServiceApplicationTests {
+class TravelAgencyServiceApplicationTests {
 
     @Test
     void contextLoads() {

@@ -1,0 +1,12 @@
+server.port: 7006
+server.error.include-message: always
+
+app:
+  reservation-service:
+    host: localhost
+    port: 7007
+
+logging:
+level:
+root: INFO
+se.magnus: DEBUG
