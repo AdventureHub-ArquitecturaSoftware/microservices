@@ -1,11 +1,7 @@
 package com.adventurehub.api.core.reservation;
 
-import com.adventurehub.api.composite.reservation.ReservationAgregate;
-import lombok.*;
 
 import java.math.BigDecimal;
-import java.util.Date;
-
 
 public class Reservation {
     private Integer travelPackageId;
