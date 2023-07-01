@@ -1,12 +1,12 @@
 package com.example.reservationservice.mapper;
 
-import com.adventurehub.api.core.reservation.Reservation;
 import com.example.reservationservice.entity.ReservationEntity;
+import com.example.reservationservice.reservation.Reservation;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 
-@Mapper(componentModel = "com.example")
+@Mapper(componentModel = "spring")
 public interface ReservationMapper {
     @Mappings({
             @Mapping(target = "serviceAddress", ignore = true),
